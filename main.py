@@ -14,7 +14,7 @@ class Pizza():
         return self._desc
 
 #Alt sınıflar:
-class TürkPizza(Pizza):
+class TurkPizza(Pizza):
     def __init__(self):
         
         desc = "Kalın tabanıyla doyurucu pizza."
@@ -57,7 +57,7 @@ class Mantarlar(Toppings):
         self.desc = "10 adet mantar ekler."
         self.cost = 5
 
-class KeçiPeyniri(Toppings):
+class KeciPeyniri(Toppings):
     def __init__(self, component):
         super().__init__(component)
         self.desc = "10 dilim keçi peyniri ekler."
@@ -69,13 +69,13 @@ class Et(Toppings):
         self.desc = "50 gram et ekler"
         self.cost = 10
 
-class Soğan(Toppings):
+class Sogan(Toppings):
     def __init__(self, component):
         super().__init__(component)
         self.desc = "1 adet dilimlenmiş soğan ekler."
         self.cost = 3
 
-class Mısır(Toppings):
+class Misir(Toppings):
     def __init__(self, component):
         super().__init__(component)
         self.desc = "Ekstra mısır ekler."
@@ -90,7 +90,7 @@ def main():
     pizza_choice = int(input("Lütfen pizza tabanını seçiniz (1-3): "))
     while True:
         if pizza_choice == 1:
-            pizza = TürkPizza()
+            pizza = TurkPizza()
             break
         elif pizza_choice == 2:
             pizza = DominosPizza()
